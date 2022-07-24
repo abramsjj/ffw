@@ -1,0 +1,15 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	padding: 10px;
+	margin: 0;
+	position: relative;
+	min-height: 100vh;
+
+	@media (min-width: 1024px) {
+		padding: 10px 100px;
+	}
+}

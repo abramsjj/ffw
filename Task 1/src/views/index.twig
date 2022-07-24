@@ -1,0 +1,38 @@
+{% extends "layout/base.twig" %}
+
+
+{% block page %}
+	{% block header %}
+		{% include './partials/header.twig' %}
+	{% endblock %}
+
+	<fieldset class="card card__open">
+		<div class="card__wrapper card__wrapper--column">
+			<input type="radio" id="m" name="test" value="m" class="card__input" checked>
+			<label for="m" class="card__label card__label--column">
+				<div class="card__color card__color--green">M</div>
+				<span class="card__text card__text--column">Merriweather project is led by Sorkin Type</span>
+			</label>
+		</div>
+		<div class="card__wrapper card__wrapper--column">
+			<div class="card__wrapper card__wrapper--row">
+				<input type="radio" id="r" name="test" value="r" class="card__input">
+				<label for="r" class="card__label card__label--row">
+					<div class="card__color card__color--pink">R</div>
+					<span class="card__text card__text--row">Roboto doesn't compromise, allowing letters</span>
+				</label>
+			</div>
+			<div class="card__wrapper card__wrapper--row">
+				<input type="radio" id="ns" name="test" value="ns" class="card__input">
+				<label for="ns" class="card__label card__label--row">
+					<div class="card__color card__color--blue">NS</div>
+					<span class="card__text card__text--row">Noto Sans covers over 30 scripts</span>
+				</label>
+			</div>
+		</div>
+	</fieldset>
+
+	{% block header %}
+		{% include './partials/buy.twig' %}
+	{% endblock %}
+{% endblock %}
